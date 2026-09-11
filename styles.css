@@ -1,0 +1,338 @@
+.contenedor_padre{
+    background-color: rgb(180, 225, 226);
+    padding: 40px 32px;
+     border-radius: 24px;
+}
+
+.contenido_form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #e8eef5;
+    font-family: system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.color_contacto{
+    color: rgb(65, 169, 238);
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* Nombre y Apellido — movidos ligeramente a la derecha */
+.nombre_apellido {
+  display: flex;
+  gap: 20px;
+  max-width: 700px;
+  margin-left: 40px;   /* 👈 esto mueve solo las cajas, no el título */
+  margin-right: 0;
+}
+
+.nombre_apellido > div,
+.contacto_grupo > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.nombre, .apellido, .telefono, .correo {
+  background-color: #f0f4f8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Teléfono y Correo — mismo desplazamiento para mantener alineación */
+.contacto_grupo {
+  display: flex;
+  gap: 20px;
+  max-width: 700px;
+  margin-left: 40px;   /* 👈 mismo valor que arriba, para que ambas filas queden alineadas */
+  margin-right: 0;
+}
+/* --- ORGANIZACIÓN: Empresa y Número de empleados --- */
+.Datos_empresa {
+  display: flex;
+  gap: 20px;
+  max-width: 700px;
+  margin-left: 40px;   /* mismo desplazamiento que usaste en las otras secciones */
+  margin-right: 0;
+  margin-bottom: 20px; /* separa esta fila del select de abajo */
+}
+
+.Datos_empresa > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.empresa, .empleados {
+  background-color: #f0f4f8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* --- SERVICIO DE INTERÉS --- */
+.servicio_interes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 660px;   /* un poco menos que 700 para que respete el margin-left */
+  margin-left: 40px;
+}
+
+.servicio_interes label {
+  font-weight: 600;
+}
+
+.requerido {
+  color: #e53e3e;   /* rojo para el asterisco de campo obligatorio */
+}
+
+.select_servicio {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+  appearance: none;      /* quita la flecha nativa del navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+
+  /* Flecha personalizada con SVG en lugar de la nativa */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px;
+}
+
+.select_servicio:focus {
+  border-color: rgb(65, 169, 238);   /* usa tu color de acento al enfocar */
+  box-shadow: 0 0 0 3px rgba(65, 169, 238, 0.15);
+}
+/* --- DISPONIBILIDAD: Fecha y Hora --- */
+.fecha-hora {
+  display: flex;
+  gap: 20px;
+  max-width: 700px;
+  margin-left: 40px;   /* mismo desplazamiento que las otras secciones */
+  margin-right: 0;
+}
+
+.fecha-hora > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.fecha-hora input[type="date"],
+.fecha-hora input[type="time"] {
+  background-color: #f0f4f8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;   /* los inputs date/time a veces heredan otra fuente por defecto */
+}
+/* --- CAJAS CON BORDE (Modalidad y Temas) --- */
+.caja_bordeada {
+  max-width: 660px;
+  margin-left: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.caja_bordeada h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* --- RADIOS Y CHECKBOXES --- */
+.radio_grupo,
+.checkbox_grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio_opcion,
+.checkbox_opcion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radio_opcion input[type="radio"],
+.checkbox_opcion input[type="checkbox"] {
+  accent-color: rgb(65, 169, 238);  /* colorea el radio/checkbox con tu color de marca */
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* --- TEXTAREA: describa su necesidad --- */
+.textarea_necesidad {
+  display: block;
+  max-width: 660px;
+  margin-left: 40px;
+  margin-top: 6px;
+  background-color: #f0f4f8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  min-height: 100px;
+  resize: vertical;
+  outline: none;
+  box-sizing: border-box;
+  width: calc(100% - 40px);  /* respeta el margin-left sin desbordar */
+}
+
+.texto_ayuda {
+  display: block;
+  margin-left: 40px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* --- DOCUMENTO DE SOPORTE --- */
+.documento_soporte {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 660px;
+  margin-left: 40px;
+  margin-top: 6px;
+}
+
+.input_archivo_oculto {
+  display: none;   /* ocultamos el input feo por defecto */
+}
+
+.boton_archivo {
+  background-color: #f0f4f8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.boton_archivo:hover {
+  background-color: #e2e8f0;
+}
+
+.texto_archivo {
+  font-size: 14px;
+  color: #555;
+}
+
+/* --- CHECKBOX TÉRMINOS --- */
+#seccion_terminos {
+  margin-left: 40px;
+}
+
+/* --- BOTONES FINALES --- */
+.botones_grupo {
+  display: flex;
+  gap: 12px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.boton_enviar {
+  background-color: rgb(65, 169, 238);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton_enviar:hover {
+  background-color: rgb(45, 149, 218);
+}
+
+.boton_limpiar {
+  background-color: #f0f4f8;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.boton_limpiar:hover {
+  background-color: #e2e8f0;
+}
+/* --- ESTILO BASE + ANIMACIÓN PARA TODAS LAS CAJAS DE TEXTO --- */
+.nombre, 
+.apellido, 
+.telefono, 
+.correo, 
+.empresa, 
+.empleados,
+.select_servicio,
+.fecha-hora input[type="date"],
+.fecha-hora input[type="time"],
+.textarea_necesidad {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Efecto al pasar el cursor (hover) */
+.nombre:hover, 
+.apellido:hover, 
+.telefono:hover, 
+.correo:hover, 
+.empresa:hover, 
+.empleados:hover,
+.select_servicio:hover,
+.fecha-hora input[type="date"]:hover,
+.fecha-hora input[type="time"]:hover,
+.textarea_necesidad:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(65, 169, 238, 0.15);
+  border-color: rgb(65, 169, 238);
+}
+
+/* Efecto al hacer clic / seleccionar el campo (focus) — un poco más marcado */
+.nombre:focus, 
+.apellido:focus, 
+.telefono:focus, 
+.correo:focus, 
+.empresa:focus, 
+.empleados:focus,
+.select_servicio:focus,
+.fecha-hora input[type="date"]:focus,
+.fecha-hora input[type="time"]:focus,
+.textarea_necesidad:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(65, 169, 238, 0.25);
+  border-color: rgb(65, 169, 238);
+}

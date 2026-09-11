@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+
+
+<html lang="es">
+
+<head>
+    <title>Formularios de contactos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <body >
+
+        <main class="contenedor_padre">
+        
+        <section>
+
+            <div class="tarjeta_formulario">
+
+                <header>
+                    <div class="contenedor_contacto">
+                    <span class="color_contacto">CONTACTO</span>
+                    </div>
+                    <h1>Hoy hablaremos de tu proyecto </h1>
+                    <p>Complete su informacion para entededer su solicitud</p>
+                </header>
+
+                <!--aqui empiezan todos los campos del formulario -->
+                <form>
+
+                   <section class="seccion_formulario" id="seccion_datos_personales">
+                        <h2>Datos Personales</h2>
+                        <div class="nombre_apellido">
+                            <div>
+                                <label for="Nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" class="nombre" placeholder="Tu Nombre">
+                            </div>
+                            <div>
+                                <label for="Apellido">Apellido</label>
+                                <input type="text" id="Apellido" name="Apellido" class="apellido" placeholder="Tu Apellido">
+                            </div>
+
+                        </div>
+                        <div class="contacto_grupo">
+                            <div>
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="telefono" placeholder="Ej: +57 300 000 0000">
+                            </div>
+                            <div>
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" id="correo" name="correo" class="correo" placeholder="tu@email.com">
+                            </div>
+                        </div>
+                    </section>
+
+                   <section class="seccion_formulario" id="seccion_organizacion">
+                    <h2>Organización</h2>
+                    <div class="Datos_empresa">
+                        <div>
+                            <label for="Empresa">Empresa</label>
+                            <input type="text" id="Empresa" name="Empresa" class="empresa" placeholder="Nombre de tu empresa">
+                        </div>
+                        <div>
+                            <label for="empleados">Número de empleados</label>
+                            <input type="number" id="empleados" name="empleados" class="empleados" placeholder="Ej: 25">
+                        </div>
+                    </div>
+
+                    <div class="servicio_interes">
+                        <label for="servicio">Servicio de interés <span class="requerido">*</span></label>
+                        <select id="servicio" name="servicio" class="select_servicio" required>
+                            <option value="" selected disabled>Seleccione un servicio</option>
+                            <option value="desarrollo_web">Desarrollo web</option>
+                            <option value="diseño">Diseño UX/UI</option>
+                            <option value="marketing">Marketing digital</option>
+                            <option value="consultoria">Consultoría</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </section>
+           <section class="seccion_formulario" id="seccion_disponibilidad">
+                <h3>Disponibilidad</h3>
+                <div class="fecha-hora">
+                    <div class="fecha">
+                        <label for="fecha">Seleccione fecha</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+
+                    <div class="hora">
+                        <label for="hora">Seleccione hora</label>
+                        <input type="time" id="hora" name="hora">
+                    </div>
+                </div>
+            </section>
+            <section class="seccion_formulario" id="seccion_modalidad">
+                <div class="caja_bordeada">
+                    <h4>Modalidad de contacto</h4>
+                    <div class="radio_grupo">
+                        <label class="radio_opcion">
+                            <input type="radio" id="correo_electronico" name="modalidad" value="correo" checked>
+                            Correo electrónico
+                        </label>
+                        <label class="radio_opcion">
+                            <input type="radio" id="telefono_modalidad" name="modalidad" value="telefono">
+                            Teléfono
+                        </label>
+                        <label class="radio_opcion">
+                            <input type="radio" id="videollamada" name="modalidad" value="videollamada">
+                            Videollamada
+                        </label>
+                    </div>
+                </div>
+
+                <div class="caja_bordeada">
+                    <h4>Temas adicionales de interés</h4>
+                    <div class="checkbox_grupo">
+                        <label class="checkbox_opcion">
+                            <input type="checkbox" name="temas" value="seguridad_aplicaciones">
+                            Seguridad de aplicaciones
+                        </label>
+                        <label class="checkbox_opcion">
+                            <input type="checkbox" name="temas" value="cloud_security">
+                            Cloud Security
+                        </label>
+                        <label class="checkbox_opcion">
+                            <input type="checkbox" name="temas" value="ai_security">
+                            AI Security
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion_formulario" id="seccion_necesidad">
+                <label for="necesidad">Describa su necesidad <span class="requerido">*</span></label>
+                <textarea id="necesidad" name="necesidad" class="textarea_necesidad" maxlength="1200" placeholder="Cuéntenos brevemente qué necesita..." required></textarea>
+                <span class="texto_ayuda">Máximo 1200 caracteres</span>
+            </section>
+
+            <section class="seccion_formulario" id="seccion_documento">
+                <label>Documento de soporte</label>
+                <div class="documento_soporte">
+                    <label for="archivo" class="boton_archivo">Seleccionar archivo</label>
+                    <input type="file" id="archivo" name="archivo" class="input_archivo_oculto">
+                    <span id="nombre_archivo" class="texto_archivo">Sin archivos seleccionados</span>
+                </div>
+                <span class="texto_ayuda">Formatos sugeridos: PDF, Word o Excel.</span>
+            </section>
+
+            <section class="seccion_formulario" id="seccion_terminos">
+                <label class="checkbox_opcion">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    Acepto el tratamiento de la información suministrada.
+                </label>
+            </section>
+
+            <section class="seccion_formulario" id="seccion_botones">
+                <div class="botones_grupo">
+                    <button type="submit" class="boton_enviar">Enviar solicitud</button>
+                    <button type="reset" class="boton_limpiar">Limpiar</button>
+                </div>
+            </section>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        </main>
+
+    </body>
+
+</html>
