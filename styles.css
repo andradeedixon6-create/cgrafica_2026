@@ -24,12 +24,12 @@ body {
     text-transform: uppercase;
 }
 
-/* Nombre y Apellido — movidos ligeramente a la derecha */
+
 .nombre_apellido {
   display: flex;
   gap: 20px;
   max-width: 700px;
-  margin-left: 40px;   /* 👈 esto mueve solo las cajas, no el título */
+  margin-left: 40px;   
   margin-right: 0;
 }
 
@@ -50,24 +50,23 @@ body {
   outline: none;
 }
 
-/* Teléfono y Correo — mismo desplazamiento para mantener alineación */
+
 .contacto_grupo {
   display: flex;
   gap: 20px;
   max-width: 700px;
-  margin-left: 40px;   /* 👈 mismo valor que arriba, para que ambas filas queden alineadas */
+  margin-left: 40px;   
   margin-right: 0;
 }
-/* --- ORGANIZACIÓN: Empresa y Número de empleados --- */
+
 .Datos_empresa {
   display: flex;
   gap: 20px;
   max-width: 700px;
-  margin-left: 40px;   /* mismo desplazamiento que usaste en las otras secciones */
+  margin-left: 40px;   
   margin-right: 0;
-  margin-bottom: 20px; /* separa esta fila del select de abajo */
+  margin-bottom: 20px; 
 }
-
 .Datos_empresa > div {
   display: flex;
   flex-direction: column;
@@ -84,12 +83,11 @@ body {
   outline: none;
 }
 
-/* --- SERVICIO DE INTERÉS --- */
 .servicio_interes {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  max-width: 660px;   /* un poco menos que 700 para que respete el margin-left */
+  max-width: 660px;   
   margin-left: 40px;
 }
 
@@ -98,7 +96,7 @@ body {
 }
 
 .requerido {
-  color: #e53e3e;   /* rojo para el asterisco de campo obligatorio */
+  color: #e53e3e;   
 }
 
 .select_servicio {
@@ -108,12 +106,12 @@ body {
   padding: 12px 14px;
   font-size: 14px;
   outline: none;
-  appearance: none;      /* quita la flecha nativa del navegador */
+  appearance: none;      
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
 
-  /* Flecha personalizada con SVG en lugar de la nativa */
+  
   background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
@@ -121,15 +119,15 @@ body {
 }
 
 .select_servicio:focus {
-  border-color: rgb(65, 169, 238);   /* usa tu color de acento al enfocar */
+  border-color: rgb(65, 169, 238);   
   box-shadow: 0 0 0 3px rgba(65, 169, 238, 0.15);
 }
-/* --- DISPONIBILIDAD: Fecha y Hora --- */
+
 .fecha-hora {
   display: flex;
   gap: 20px;
   max-width: 700px;
-  margin-left: 40px;   /* mismo desplazamiento que las otras secciones */
+  margin-left: 40px;   
   margin-right: 0;
 }
 
@@ -148,9 +146,8 @@ body {
   padding: 12px 14px;
   font-size: 14px;
   outline: none;
-  font-family: inherit;   /* los inputs date/time a veces heredan otra fuente por defecto */
+  font-family: inherit;  
 }
-/* --- CAJAS CON BORDE (Modalidad y Temas) --- */
 .caja_bordeada {
   max-width: 660px;
   margin-left: 40px;
@@ -165,7 +162,7 @@ body {
   margin-bottom: 12px;
 }
 
-/* --- RADIOS Y CHECKBOXES --- */
+
 .radio_grupo,
 .checkbox_grupo {
   display: flex;
@@ -184,13 +181,13 @@ body {
 
 .radio_opcion input[type="radio"],
 .checkbox_opcion input[type="checkbox"] {
-  accent-color: rgb(65, 169, 238);  /* colorea el radio/checkbox con tu color de marca */
+  accent-color: rgb(65, 169, 238);  
   width: 16px;
   height: 16px;
   cursor: pointer;
 }
 
-/* --- TEXTAREA: describa su necesidad --- */
+
 .textarea_necesidad {
   display: block;
   max-width: 660px;
@@ -206,7 +203,7 @@ body {
   resize: vertical;
   outline: none;
   box-sizing: border-box;
-  width: calc(100% - 40px);  /* respeta el margin-left sin desbordar */
+  width: calc(100% - 40px);  
 }
 
 .texto_ayuda {
@@ -217,7 +214,7 @@ body {
   color: #777;
 }
 
-/* --- DOCUMENTO DE SOPORTE --- */
+
 .documento_soporte {
   display: flex;
   align-items: center;
@@ -228,7 +225,7 @@ body {
 }
 
 .input_archivo_oculto {
-  display: none;   /* ocultamos el input feo por defecto */
+  display: none;   
 }
 
 .boton_archivo {
@@ -250,12 +247,12 @@ body {
   color: #555;
 }
 
-/* --- CHECKBOX TÉRMINOS --- */
+
 #seccion_terminos {
   margin-left: 40px;
 }
 
-/* --- BOTONES FINALES --- */
+
 .botones_grupo {
   display: flex;
   gap: 12px;
@@ -291,7 +288,7 @@ body {
 .boton_limpiar:hover {
   background-color: #e2e8f0;
 }
-/* --- ESTILO BASE + ANIMACIÓN PARA TODAS LAS CAJAS DE TEXTO --- */
+
 .nombre, 
 .apellido, 
 .telefono, 
@@ -305,7 +302,7 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* Efecto al pasar el cursor (hover) */
+
 .nombre:hover, 
 .apellido:hover, 
 .telefono:hover, 
@@ -321,7 +318,7 @@ body {
   border-color: rgb(65, 169, 238);
 }
 
-/* Efecto al hacer clic / seleccionar el campo (focus) — un poco más marcado */
+
 .nombre:focus, 
 .apellido:focus, 
 .telefono:focus, 
