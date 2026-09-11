@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario de soporte tecnico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="menu_principal">
+        <header>
+            <h1>Soporte tecnico, módulo de reportes</h1>
+            <p>Por favor, describa su solucion detalladamente.</p>
+        </header>
+        <form>
+            <section>
+                <div class="sitemas">
+                    <label for="sitemas">Sistemas afectado</label>
+                    <select type="text" name="prioridad" required>
+                        <option value="" disabled selected>Selecciona el módulo afectado</option>
+                            <option value="facturacion">Módulo de Facturación y Ventas</option>
+                            <option value="autenticacion">Inicio de Sesión y Control de Acceso</option>
+                            <option value="base_datos">Consultas y Almacenamiento de Datos</option>
+                            <option value="interfaz">Interfaz de Usuario y Rendimiento Web</option>
+                            <option value="reportes">Generación y Exportación de Reportes</option>
+
+                    </select>
+                </div>
+            </section>
+            <section>
+                <div class="prioridad">
+                    <label for="prioridad">Nivel de prioridad</label>
+                    <select type="text" name="prioridad" required>
+                        <option value="" disabled selected>Selecciona el módulo afectado</option>
+                            <option value="" disabled selected>Selecciona el nivel de prioridad</option>
+                                <option value="baja">Baja - Consulta general o ajuste estético</option>
+                                <option value="media">Media - Fallo menor con alternativa de uso</option>
+                                <option value="alta">Alta - Funcionalidad clave bloqueada</option>
+                                <option value="critica">Crítica - Sistema caído o fuera de servicio</option>
+                    </select>
+                </div>
+            </section>
+            <section>
+                <div class="descripcion">
+                    <label for="descripcion">Descripción del problema</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describa detalladamente lo que paso " required></textarea>
+
+                </div>
+            </section>
+            <section>
+                <div class="campo-archivo">
+    <label>Adjuntar evidencia o captura del error</label>
+    <div class="zona-archivo">
+        <input type="file" id="evidencia" name="evidencia" accept="image/*,.pdf">
+        <div class="contenido-zona">
+                    <span class="icono-nube"></span>
+                    <p class="texto-principal"><strong>Arrastra y suelta tu archivo aquí</strong></p>
+                    <p class="texto-secundario">o haz clic para buscar en tu dispositivo (PNG, JPG, PDF. Máx. 5MB)</p>
+                    <span class="btn-buscar">Seleccionar archivo</span>
+                </div>
+            </div>
+        </div>
+            </section>
+        <button type="submit" class="boton_enviar">Enviar Reporte de Soporte</button>
+
+        </form>
+
+    </main>
+</body>
+</html>

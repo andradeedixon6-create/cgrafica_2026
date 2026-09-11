@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Reservas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <main class="padre">
+            <header>
+                <h1>Haga sus Reservas</h1>
+                <p>Llene sus datos para que podamos reservarle una mesa</p>
+            </header>
+            <section>
+                <form>
+                    <div class="fila_datos">
+                        <div class="datos_personales">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre"  name="nombre" placeholder="Tu nombre">
+                        </div>
+                        <div class="identificacion">
+                            <label for="identificacion">Identificación</label>
+                            <input type="text" id="identificacion"  name="Identificacion" placeholder="10000000">
+                        </div>
+                      
+                        
+                    </div>
+                    <div class="mesas">
+                        <label for="mesa">Selecciona tu mesa</label>
+                            <select id="mesa" name="mesa">
+                            <option value="">Elige una mesa</option>
+                            <option value="1">Mesa 1 — 2 personas</option>
+                            <option value="2">Mesa 2 — 4 personas</option>
+                            <option value="3">Mesa 3 — 4 personas</option>
+                            <option value="4">Mesa 4 — 6 personas</option>
+                            <option value="5">Mesa 5 — 8 personas</option>
+                            </select>
+                    </div>
+                    <div class="fecha_hora">
+                        <label>Ingrese fecha y hora de su reserva</label>
+                        <input type="datetime-local" id="hora" name="hora">
+                    </div>
+                    <div class="cuota_reserva">
+                        <label for="cuota">Cuota de la reserva</label>
+                        <input type="number" id="cuota" name="cuota" placeholder="ej 20000">
+                    </div>
+                    <button type="submit" class="boton_reservar">Hacer reserva</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
+
+<!--falta poner la parte de cuantas mesas la fecha y hora y por ultimo la parte una cotizacion para la reserva -->

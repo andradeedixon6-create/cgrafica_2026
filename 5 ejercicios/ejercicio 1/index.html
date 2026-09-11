@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="tarjeta">
+        <header class="encabezado">
+            <h1>Crear Cuenta</h1>
+            <p>Regístrate para comenzar</p>
+        </header>
+
+        <form class="formulario">
+            <!-- NOMBRE -->
+            <div class="grupo_campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" class="campo" placeholder="Ej. Juan Pérez" required>
+            </div>
+
+            <!-- CORREO -->
+            <div class="grupo_campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" class="campo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <!-- CONTRASEÑA -->
+            <div class="grupo_campo">
+                <label for="pass1">Contraseña</label>
+                <input type="password" id="pass1" class="campo" placeholder="••••••••" required>
+            </div>
+
+            <!-- CONFIRMAR CONTRASEÑA -->
+            <div class="grupo_campo">
+                <label for="pass2">Confirmar contraseña</label>
+                <input type="password" id="pass2" class="campo" placeholder="••••••••" required>
+            </div>
+
+            <!-- TÉRMINOS Y CONDICIONES (CHECKBOX) -->
+            <div class="grupo_terminos">
+                <label class="check_label">
+                    <input type="checkbox" id="terminos" required>
+                    <span>Acepto los términos y condiciones y la política de privacidad</span>
+                </label>
+            </div>
+
+            <!-- BOTÓN -->
+            <button type="submit" class="boton_registro">Registrarse</button>
+
+            <!-- ENLACE SESIÓN -->
+            <p class="texto_login">¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+        </form>
+    </main>
+
+</body>
+</html>

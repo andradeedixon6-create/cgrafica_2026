@@ -1,0 +1,127 @@
+body{
+    background-color: #5d5a5a;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.padre{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 40px;
+}
+
+.fila_datos{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.datos_personales{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.datos_personales input{
+    padding: 10px 8px;
+    border-radius: 8px;
+    width: 220px;
+}
+
+.identificacion{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.identificacion input{
+    padding: 10px 8px;
+    border-radius: 8px;
+    width: 220px;
+}
+
+.mesas{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.mesas select{
+    padding: 10px 8px;
+    border-radius: 8px;
+    width: 220px;
+}
+
+.fecha_hora{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.fecha_hora input{
+    padding: 10px 8px;
+    border-radius: 8px;
+    width: 220px;
+}
+
+.cuota_reserva{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.cuota_reserva input{
+    padding: 10px 8px;
+    border-radius: 8px;
+    width: 220px;
+}
+
+.boton_reservar{
+    padding: 6px 40px;
+    background-color: #b5804a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.boton_reservar:hover{
+    background-color: #96683a;
+}
+
+.datos_personales input,
+.identificacion input,
+.mesas select,
+.fecha_hora input,
+.cuota_reserva input{
+    transition: all 0.2s ease;
+    outline: none;
+    border: 1px solid #d1d5db;
+}
+
+.datos_personales input:focus,
+.identificacion input:focus,
+.mesas select:focus,
+.fecha_hora input:focus,
+.cuota_reserva input:focus{
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}

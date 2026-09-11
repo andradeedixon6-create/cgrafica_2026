@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario de satisfacción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Tu opinion nos importa</h1>
+            <p>Ayudanos resolviendo esta breve encuesta</p>
+        </header>
+        <form>
+           <section>
+        <div class="campos_satisfaccion">
+            <label>¿Cómo calificarías tu experiencia en general? (1 al 10)</label>
+                <div class="contenedor_rango">
+                    <span class="emoji_rango">🙁 1</span>
+                    <input 
+                        type="range" 
+                        id="satisfaccion" 
+                        name="satisfaccion" 
+                        min="1" 
+                        max="10" 
+                        value="5" 
+                        step="1"
+                    >
+                    <span class="emoji_rango">10 😄</span>
+                </div>
+            </div>
+    </section>
+            <section>
+                <p>Con que frecuencia nos visita </p>
+                <div>
+                    <label>
+                        <input type="radio" name="frecuencia" value="primera_vez">
+                        Primera vez 
+                    </label>
+                    <label>
+                        <input type="radio" name="frecuencia" value="semanalmente">
+                        semanalmente 
+                    </label>
+                    <label>
+                        <input type="radio" name="frecuencia" value="mensualmente">
+                        mensualmente
+                    </label>
+                    <label>
+                        <input type="radio" name="frecuencia" value="ocacionalmente">
+                        ocacionalmente 
+                    </label>
+                </div>
+            </section>
+            <section>
+                <p> ¿Que aspectos destacarias de esta visita? (seleciona varios )</p>
+                <div class="check_box"> 
+                    <label for="calidad_comida">
+                        <input type="checkbox" id="calidad_comida" name="calidad_comida" value="si">
+                        Calidad de la comida 
+                    </label>
+                     <label for="Servicio">
+                        <input type="checkbox" id="Servicio" name="Servicio" value="si">
+                        Servicio y atención 
+                    </label>
+                     <label for="Calidad">
+                        <input type="checkbox" id="Calidad" name="Calidad" value="si">
+                        Calidad de la comida 
+                    </label >
+                     <label for="Tiempo">
+                        <input type="checkbox" id="Tiempo" name="Tiempo" value="si">
+                        Tiempo de espera
+                    </label>
+                     <label for="Precios">
+                        <input type="checkbox" id="Precios" name="Precios" value="si">
+                        Precios  
+                    </label>
+                    
+                </div>
+            </section>
+            <button type="submit" class="boton_enviar">Enviar</button>
+
+        </form>
+    </main>
+
+</body>
+</html>
