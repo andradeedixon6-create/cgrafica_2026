@@ -1,0 +1,482 @@
+
+:root {
+    --color-principal: #ff4d1c;        
+    --color-principal-hover: #e8380a;  
+    --color-principal-claro: #fff1eb;  
+    --color-oscuro: #0d0d0d;           
+    --fondo-oscuro: #1a1a1a;          
+    --color-texto-suave: #d8d8d8;    
+    --color-borde: #2b2b2b;            
+    --radio-borde: 14px;               
+    --ancho-contenedor: 1240px;        
+    --sombra: 0 10px 25px -5px rgba(0, 0, 0, 0.35), 0 8px 10px -6px rgba(255, 77, 28, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--color-oscuro);
+    background: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contenedor {
+    width: min(calc(100% - 48px), var(--ancho-contenedor));
+    margin-inline: auto;
+}
+
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(13, 13, 13, 0.92);
+    border-bottom: 1px solid var(--color-borde);
+    backdrop-filter: blur(14px);
+}
+
+.encabezado-contenedor {
+    width: min(calc(100% - 48px), var(--ancho-contenedor));
+    margin-inline: auto;
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.logo-texto {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.logo-acento {
+    color: var(--color-principal);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu a {
+    color: var(--color-texto-suave);
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: var(--color-principal);
+}
+
+
+.boton-contacto {
+    padding: 11px 18px;
+    border-radius: 10px;
+    background: var(--color-principal);
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.boton-contacto:hover {
+    background: var(--color-principal-hover);
+}
+
+
+.seccion-hero {
+    position: relative;
+    background-image:
+        linear-gradient(90deg, rgba(13,13,13,0.85) 0%, rgba(13,13,13,0.55) 100%),
+        url('imagen.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 115px;
+    overflow: hidden;
+    scroll-margin-top: 78px; 
+}
+
+.hero-contenedor {
+    width: min(calc(100% - 48px), var(--ancho-contenedor));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(380px, .92fr);
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-etiqueta {
+    color: var(--color-principal);
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.seccion-hero h1 {
+    margin: 18px 0 0;
+    color: #ffffff;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    line-height: 1.02;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.seccion-hero h1 span {
+    color: var(--color-principal);
+    display: block;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.hero-descripcion {
+    color: var(--color-texto-suave);
+    font-size: 1.12rem;
+    line-height: 1.75;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.hero-boton-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.seccion-servicios {
+    padding: 40px 0;
+    scroll-margin-top: 78px;
+}
+
+.servicios-contenedor {
+    width: min(calc(100% - 48px), var(--ancho-contenedor));
+    margin-inline: auto;
+}
+
+.servicios-encabezado {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.servicios-etiqueta {
+    display: inline-block;
+    color: var(--color-principal);
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: .1em;
+    margin-bottom: 10px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    padding: 60px 0;
+}
+
+.tarjeta-servicio {
+    background: var(--fondo-oscuro);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    padding: 28px;
+    box-shadow: var(--sombra);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-principal);
+}
+
+.tarjeta-servicio h3 {
+    color: #ffffff;
+    font-size: 1.35rem;
+    margin: 0 0 12px;
+}
+
+.tarjeta-servicio p {
+    color: var(--color-texto-suave);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+
+.tarjeta-etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.tarjeta-etiquetas span {
+    background: rgba(255, 77, 28, 0.12);
+    color: var(--color-principal);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 77, 28, 0.3);
+}
+
+.tarjeta-enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid var(--color-borde);
+    padding-top: 16px;
+}
+
+.tarjeta-enlaces a {
+    color: var(--color-texto-suave);
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.tarjeta-enlaces a:hover {
+    color: var(--color-principal);
+}
+
+
+.seccion-salud {
+    background: #ffffff;
+    padding: 90px 0;
+    scroll-margin-top: 78px;
+}
+
+.encabezado-seccion {
+    max-width: 720px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.etiqueta-seccion {
+    display: inline-block;
+    color: var(--color-principal);
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: .12em;
+    margin-bottom: 14px;
+}
+
+.encabezado-seccion h2 {
+    color: var(--color-oscuro);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.25;
+    margin: 0 0 16px;
+}
+
+.encabezado-seccion p {
+    color: #4a4a4a;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+.seccion-metodologia {
+    background: var(--fondo-oscuro);
+    padding: 90px 0;
+    scroll-margin-top: 78px;
+}
+
+.seccion-metodologia .encabezado-seccion h2 {
+    color: #ffffff;
+}
+
+.seccion-metodologia .encabezado-seccion p {
+    color: var(--color-texto-suave);
+}
+
+.metodologia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.metodologia-item {
+    background: #232323;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    padding: 24px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: .02em;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.metodologia-item:hover {
+    border-color: var(--color-principal);
+    transform: translateY(-4px);
+}
+
+
+.seccion-cta {
+    background: var(--color-principal);
+    padding: 70px 0;
+}
+
+.cta-caja {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.cta-caja .etiqueta-seccion {
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+.cta-caja h2 {
+    color: #ffffff;
+    font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+    line-height: 1.3;
+    margin: 0;
+    max-width: 600px;
+}
+
+.cta-boton {
+    background: #ffffff;
+    color: var(--color-principal);
+    font-weight: 800;
+    padding: 16px 28px;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cta-boton:hover {
+    background: var(--color-oscuro);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+.pie-pagina {
+    background: var(--color-oscuro);
+    padding: 60px 0 30px;
+    scroll-margin-top: 78px;
+}
+
+.pie-grid {
+    width: min(calc(100% - 48px), var(--ancho-contenedor));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+}
+
+.pie-pagina h3 {
+    color: var(--color-principal);
+    font-size: 1rem;
+    letter-spacing: .05em;
+    margin: 0 0 14px;
+}
+
+.pie-pagina p,
+.pie-pagina a {
+    color: var(--color-texto-suave);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.pie-pagina a:hover {
+    color: var(--color-principal);
+}
+
+/* Suplementación */
+.seccion-suplementos {
+    position: relative;
+    background-image:
+        linear-gradient(90deg, rgba(13,13,13,0.85) 0%, rgba(13,13,13,0.55) 100%),
+        url('suple.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+    scroll-margin-top: 78px;
+}
+
+.seccion-suplementos .encabezado-seccion h2 {
+    color: #ffffff;
+}
+
+.seccion-suplementos .encabezado-seccion p {
+    color: var(--color-texto-suave);
+}
+/* ==========================================================
+   SECCIÓN INFO SUPLEMENTOS
+   ========================================================== */
+.info-suplementos {
+    width: min(calc(100% - 48px), var(--ancho-contenedor));
+    margin-inline: auto;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.info-suplementos h2 {
+    color: var(--color-oscuro);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    margin: 0 0 16px;
+}
+
+.info-suplementos > p {
+    color: #4a4a4a;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto 50px;
+}
+
+/* Las tarjetas (article) se acomodan en fila automáticamente */
+.suplemento-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    margin: 0 12px 20px;
+    background: rgba(255, 77, 28, 0.06);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.suplemento-item:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-principal);
+}
+
+.suplemento-item h3 {
+    color: var(--color-principal);
+    font-size: 1.15rem;
+    margin: 0 0 10px;
+}
+
+.suplemento-item p {
+    color: #4a4a4a;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0;
+}
+.suplementos-cta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.suplementos-cta p {
+    color: #4a4a4a;
+    font-size: 1.05rem;
+    margin: 0 0 18px;
+}

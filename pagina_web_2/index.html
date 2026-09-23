@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ciberseguridad">
+    <title>Empresa Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="encabezado-contenedor">
+            <a class="logo" href="index.html">
+                <span class="logo-texto">Mundo<span class="logo-acento">Fit</span></span>
+            </a>
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="#alimentacion">Cuidamos tu alimentación</a>
+                <a href="#salud">Nos preocupa tu salud</a>
+                <a href="#ejercicio">Ejercitate con nosotros</a>
+                <a class="boton-contacto" href="#comunicate">Comunicate</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN PRINCIPAL (Hero) -->
+        <section class="seccion-hero">
+            <div class="hero-contenedor">
+                <div class="hero-texto">
+                    <span class="hero-etiqueta">No descuides tu salud</span>
+                    <h1>Tú alimentación es importante. <span>Ejercitate todos los dias con nosotros</span></h1>
+                    <p class="hero-descripcion">¿Quieres tener un cambio fisico para tu vida pero no sabes como empezar?</p>
+                    <p class="hero-descripcion">¿Sientes que tú alimentación no es la adecuada?</p>
+                    <div class="hero-boton-contenedor">
+                        <a class="boton-contacto" href="#comunicate">Comunicate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SERVICIOS (enlazada con "Cuidamos tu alimentación") -->
+        <section class="seccion-servicios" id="alimentacion">
+            <div class="servicios-contenedor">
+                <header class="servicios-encabezado">
+                    <span class="servicios-etiqueta">Que tenemos para ti</span>
+                    <h2>Entrenamiento personalizado y dietas valanceadas para ti</h2>
+                </header>
+                <div class="servicios-grid">
+                    <article class="tarjeta-servicio">
+                        <h3>Ejercicios Personalizados</h3>
+                        <p>Te recomendamos rutinas según tu edad, peso o condiciones de salud.</p>
+                        <div class="tarjeta-etiquetas">
+                            <span>Fuerza</span><span>Cardio</span>
+                            <span>Movilidad</span><span>Rehabilitación</span>
+                        </div>
+                        <div class="tarjeta-enlaces">
+                            <a href="fuerza.html">Fuerza →</a>
+                            <a href="cardio.html">Cardio →</a>
+                            <a href="movilidad.html">Movilidad →</a>
+                            <a href="rehabilitacion.html">Rehabilitación →</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <h3>Alimentación</h3>
+                        <p>Le sugerimos un plan de alimentación que más le convenga.</p>
+                        <div class="tarjeta-etiquetas">
+                            <span>Nutrición</span><span>Plan Alimenticio</span>
+                            <span>Suplementación</span><span>Hidratación</span>
+                        </div>
+                        <div class="tarjeta-enlaces">
+                            <a href="nutricion.html">Nutrición →</a>
+                            <a href="plan-alimenticio.html">Plan Alimenticio →</a>
+                            <a href="suplementacion.html">Suplementación →</a>
+                            <a href="hidratacion.html">Hidratación →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SALUD (enlazada con "Nos preocupa tu salud") -->
+        <section class="seccion-salud" id="salud">
+            <div class="contenedor">
+                <header class="encabezado-seccion">
+                    <span class="etiqueta-seccion">MUNDOFIT</span>
+                    <h2>El entrenamiento como parte de tu vida diaria, no como una obligación.</h2>
+                    <p>Combinamos rutinas personalizadas, seguimiento nutricional y acompañamiento constante para que
+                        alcances tus objetivos.</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- SECCIÓN METODOLOGÍA (enlazada con "Ejercitate con nosotros") -->
+        <section class="seccion-metodologia" id="ejercicio">
+            <div class="contenedor">
+                <header class="encabezado-seccion">
+                    <span class="etiqueta-seccion">NUESTRA METODOLOGÍA</span>
+                    <h2>Principios que guían cada entrenamiento</h2>
+                </header>
+                <div class="metodologia-grid">
+                    <div class="metodologia-item">Entrenamiento Funcional</div>
+                    <div class="metodologia-item">Nutrición Deportiva</div>
+                    <div class="metodologia-item">Seguimiento Personalizado</div>
+                    <div class="metodologia-item">Prevención de Lesiones</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN LLAMADO A LA ACCIÓN -->
+        <section class="seccion-cta">
+            <div class="contenedor">
+                <div class="cta-caja">
+                    <div>
+                        <span class="etiqueta-seccion">EMPECEMOS</span>
+                        <h2>¿Listo para empezar tu cambio físico con un plan hecho a tu medida?</h2>
+                    </div>
+                    <a class="cta-boton" href="#comunicate">Comunícate</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (enlazado con el botón "Comunicate") -->
+    <footer class="pie-pagina" id="comunicate">
+        <div class="pie-grid">
+            <section>
+                <h3>Ubicación</h3>
+                <p>Colombia</p>
+            </section>
+            <section>
+                <h3>Síguenos</h3>
+                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </section>
+            <section>
+                <h3>Nuestra metodología</h3>
+                <p>Funcional . Nutrición . Seguimiento . Prevención</p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
