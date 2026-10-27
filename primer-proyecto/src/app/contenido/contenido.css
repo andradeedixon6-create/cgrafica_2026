@@ -1,0 +1,13 @@
+:host {
+    display: block;
+}
+
+.contenido {
+    background-color: rgb(4, 145, 22);
+    color: #ffffff;
+    width: auto;                  
+    height: 360px;
+    padding: 50px;
+    border: 2px ;
+    margin: 40px 40px 40px 40px;  /* el 20px de la izquierda lo pega a la barra */
+}

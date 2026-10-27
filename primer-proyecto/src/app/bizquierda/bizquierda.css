@@ -1,0 +1,13 @@
+:host {
+    display: block;
+}
+
+.barra {
+    background-color: rgb(158, 158, 158);
+    color: #ffffff;
+    width: 100%;
+    min-height: 400px;
+    padding: 30px;
+    border: 2px ;
+    margin: 40px 0;
+}

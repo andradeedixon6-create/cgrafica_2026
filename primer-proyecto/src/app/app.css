@@ -1,0 +1,47 @@
+
+header {
+    background-color: gray;
+    width: 100%;
+    min-height: 90px;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.centro {
+    display: flex;
+    align-items: flex-start;
+}
+
+app-bizquierda {
+    flex: 0 0 250px;
+}
+
+app-contenido {
+    flex: 1;
+}
+
+footer {
+    background-color: yellow;
+    width: 99%;
+    height: 180px;
+    margin: 0px 10px 0px 10px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.etiqueta {
+    color: white;
+}
+
+footer app-footer1,
+footer app-footer3 {
+    align-self: flex-start;
+    margin-top: 20px;
+}
